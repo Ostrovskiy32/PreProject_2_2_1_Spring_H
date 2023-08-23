@@ -33,10 +33,10 @@ public class MainApp {
          System.out.println("Email = " + user.getEmail());
          System.out.println();
 
-      userService.carUser("BMW",520);
-      userService.carUser("AUDI",8);
-      userService.carUser("MERCEDES",320);
-      userService.carUser("VOLVO",860);
+      userService.getByModelAndSeries("BMW",520);
+      userService.getByModelAndSeries("AUDI",8);
+      userService.getByModelAndSeries("MERCEDES",320);
+      userService.getByModelAndSeries("VOLVO",860);
 
 
          context.close();
