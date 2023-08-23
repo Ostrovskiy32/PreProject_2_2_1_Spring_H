@@ -13,7 +13,7 @@ public class User {
    private Long id;
 
    @OneToOne
-   @JoinColumn(name = "car_id", referencedColumnName = "id")
+   @JoinColumn(name = "car_id")
    @Cascade(org.hibernate.annotations.CascadeType.ALL)
    private Car car;
 
