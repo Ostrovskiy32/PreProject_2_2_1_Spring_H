@@ -32,6 +32,7 @@ public class MainApp {
          System.out.println("Last Name = " + user.getLastName());
          System.out.println("Email = " + user.getEmail());
          System.out.println();
+      }
 
       userService.getByModelAndSeries("BMW",520);
       userService.getByModelAndSeries("AUDI",8);
