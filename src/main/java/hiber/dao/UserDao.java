@@ -7,5 +7,5 @@ import java.util.List;
 public interface UserDao {
    void add(User user);
    List<User> listUsers();
-   User carUser(String model, int series);
+   User getByModelAndSeries(String model, int series);
 }
