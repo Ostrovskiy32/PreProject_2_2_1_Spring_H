@@ -12,7 +12,7 @@ public class User {
    @GeneratedValue(strategy = GenerationType.IDENTITY)
    private Long id;
 
-   @OneToOne
+   @OneToOne(cascade = CascadeType.ALL)
    @JoinColumn(name = "car_id")
    @Cascade(org.hibernate.annotations.CascadeType.ALL)
    private Car car;
