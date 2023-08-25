@@ -70,7 +70,9 @@ public class Car {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Car car = (Car) o;
-        return series == car.series && Objects.equals(id, car.id) && Objects.equals(model, car.model) && Objects.equals(user, car.user);
+        return series == car.series && Objects.equals(id, car.id)
+            && Objects.equals(model, car.model)
+            && Objects.equals(user, car.user);
     }
 
     @Override
